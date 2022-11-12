@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 764px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: var(--light);
+    padding: 8px;
+    border-radius: 10px;
+    border: 4px solid black;
+    box-shadow: 8px 8px 10px black;
+}
+
+.requestBid-form {
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.required-field-star {
+    color: red;
+    margin-left: 2px;
+    font-size: 20px;
+}
+
+.text-validation {
+    color: red;
+    font-weight: 600;
+}
+
+.firstName-error, .phoneNumber-error {
+    margin-left: 20px;
+}
+
+input.requestBid-form {
+    height: 40px;
+    padding-left: 8px;
+}
+
+.lastName-input, .email-input, .sqFoot-input {
+    margin-left: 11px;
+}
+
+.name-container {
+    position: relative;
+}
+
+.contact-container {
+    position: relative;
+}
+
+.lastName-label {
+    position: absolute;
+    right: 272px;
+}
+
+.lastName-error, .email-error {
+    position: absolute;
+    top: 0; right: 64px;
+}
+
+.firstName-input, .lastName-input, .phoneNumber-input, .email-input, .city-input, .sqFoot-input {
+    width: 49%;
+}
+
+.email-label {
+    position: absolute;
+    right: 313px;
+}
+
+.sqFoot-label {
+    margin-left: 47%;
+}
+
+.message-input {
+    resize: none;
+    height: 100px;
+    padding-left: 8px;
+    padding-top: 8px;
+    font-family: 'Inter';
+}
+
+.submit-bid-btn {
+    margin: auto;
+    width: 80%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: large;
+    border: 2px solid var(--dark);
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgb(68, 67, 67);
+}
+
+.submit-bid-btn:hover {
+    cursor: pointer;
+    background-color: var(--dark);
+    color: white;
+}
+
+.submit-bid-btn:active {
+    box-shadow: 2px 4px black;
+    transform: translateY(2px);
+}
+
+.popUp {
+    width: 600px;
+    height: fit-content;
+    background-color: var(--white);
+    border: 4px solid var(--dark);
+    /* border-radius: 10px; */
+    text-align: center;
+    position: absolute;
+    top:0; bottom: 0; left: 0; right: 0;
+    z-index: 10000px;
+    margin: auto;
+}
+
+.popUp-content-wrapper {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.popUp-title {
+    font-size: x-large;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.popUp-text {
+    font-size: large;
+    font-weight: 600;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 8px; right: 16px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.close-icon:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.error-icon {
+    color: red;
+    font-size: 180px;
+}
+
+.success-icon {
+    color: green;
+    font-size: 180px;
+}
+
+.error-title {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.error-text {
+    font-size: large;
+    font-weight: 600;
+}
+
+.popUp-btn:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+.visable {
+    display: inherit;
+}
+
+.filter-blur {
+    filter: blur(5px);
+}
+
+.blur {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 100%;
+    }
+
+    .name-container, .contact-container, .project-specifics {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstName-input, .lastName-input, .firstName-label, .lastName-label {
+        width: 100%;
+    }
+
+    .lastName-input, .email-input, .sqFoot-input {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .firstName-label {
+        position: absolute;
+        top: -13px; left: 4px;
+        margin-top: 10px;
+    }
+
+    .lastName-label {
+        top: 64px; left: 4px; right: none;
+    }
+
+    .phoneNumber-label {
+        margin-top: -10px;
+        margin-left: 4px;
+        width: 100%;
+    }
+
+    .phoneNumber-input {
+        margin-top: -18px;
+        margin-bottom: 6px;
+        width: 100%;
+    }
+
+    .email-label {
+        top: 59px; left: 4px; right: none;
+        width: 100%;
+    }
+
+    .email-input {
+        width: 100%;
+    }
+
+    .project-specifics {
+        position: relative;
+    }
+
+    .city-label {
+        margin-top: -6px;
+        margin-left: 4px;
+    }
+
+    .city-input {
+        margin-top: -18px;
+        width: 100%;
+    }
+
+    .sqFoot-label {
+        position: absolute;
+        top: 64px; left: 4px;
+        margin-left: 0;
+    }
+
+    .sqFoot-input {
+        width: 100%;
+    }
+
+    .message-label {
+        margin-left: 4px;
+    }
+
+    .firstName-error {
+        position: absolute;
+        top: 2px; right: 6px;
+    }
+
+    .lastName-error {
+        top: 70px; right: 4px;
+    }
+
+    .phoneNumber-error {
+        position: absolute;
+        top: -6px; right: 6px;
+    }
+
+    .email-error {
+        top: 60px; right: 4px;
+    }
+
+    .popUp {
+        width: 100%;
+    }
+}

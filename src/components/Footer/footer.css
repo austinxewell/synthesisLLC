@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.footer-wrapper {
+    background-color: var(--dark);
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.split-footer-display-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content-wrapper {
+    margin-left: 10%;
+    width: 40%;
+    border-right: 1px solid var(--medium);
+}
+
+.right-content-wrapper {
+    margin-right: 10%;
+    width: 40%;
+}
+
+.footer-img {
+    display: block;
+    margin: auto;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 6px 6px rgba(0, 0, 0, .6);
+}
+
+.footer-slogan {
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.badges {
+    margin-left: 32px;
+    color: white;
+}
+
+.footer-nav-wrapper {
+    font-size: small;
+    color: white;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: center;
+}
+
+.footer-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -36px;
+}
+
+.footer-icons {
+    margin-top: 10px;
+    position: relative;
+}
+
+.footer-requestBid-btn {
+    background-color: white;
+    margin-top: 11px;
+    margin-bottom: 7px;
+    margin-right: 8px;
+    border-radius: 15px;
+}
+
+.footer-requestBid-btn:hover {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.footer-request-text {
+    color: black;
+    font-family: 'Oswald';
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.footer-request-text:hover {
+    font-style: italic;
+}
+
+.footer-fb-icon {
+    position: absolute;
+    top: 2px; right: -19px;
+    color: white;
+    font-size: 24px;
+}
+
+.footer-fb-icon:hover {
+    color: white;
+    font-size: 26px;
+    right: -20px;
+}
+
+.footer-nav-link:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.credit-text {
+    text-align: center;
+    font-size: small;
+    color: white;
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.footer-requestBid-icon:visited {
+    color: var(--dark);
+}
+
+a.footer-nav-link:visited, a.designed-by-link:visited {
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .left-content-wrapper {
+        width: fit-content;
+        border-right: none;
+        margin-left:  10%;
+        margin-right: 10%;
+    }
+
+    .split-footer-display-wrapper {
+        flex-direction: column;
+    }
+
+    .right-content-wrapper {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-slogan {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .badges {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .copyright {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}

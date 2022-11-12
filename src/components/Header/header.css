@@ -1,0 +1,78 @@
+.header-wrapper {
+    /* background-color: var(--white); */
+    background: radial-gradient(var(--white), var(--dark));
+}
+
+.header-img-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 68px;
+    padding-top: 20px;
+}
+
+.header-img {
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px .8em var(--light-red), -1em 0 .4em var(--dark);
+}
+
+.bid-text {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.request-bid-bottom {
+    margin-right: 120px;
+}
+
+.header-icons {
+    position: absolute;
+    right: 40px; top: 20px;
+}
+
+.fb-icon {
+    position: absolute;
+    right: -18px; top: 2px;
+    color: white;
+    font-size: 24px;
+}
+
+.fb-icon:hover {
+    color: white;
+    font-size: 26px;
+    right: -20px;
+}
+
+.icon {
+    color: white;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.icon:hover {
+    font-size: 32px;
+}
+
+.phone-number {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .header-img {
+        width: 85%;
+        height: auto;
+    }
+
+    .header-img-wrapper {
+        padding-bottom: 40px;
+    }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+:root {
+  --white: #F5F5F5;
+  --light: #d4d4d4;
+  --medium: #707070;
+  --dark: #1f1f1f;
+  --light-red: #a80000;
+  --dark-red: #731010;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter';
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Break Points for smaller Screens */
+/* 1200px */
+/* 1024px */
+/* 768px */
+/* 480 */

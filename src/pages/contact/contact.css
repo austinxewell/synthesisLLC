@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.contact-hero-wrapper {
+    background-color: var(--dark);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.contact-hero-text-wrapper {
+    margin-top: 40px;
+    padding: 8px;
+    font-family: "Permanent Marker";
+    font-size: 1.5em;
+}
+
+.inTouch-text {
+    padding-bottom: 4px;
+}
+
+.requestBid-hero-text {
+    font-size: 1.5em;
+}
+
+.requestBid-hero-text:visited {
+    color: var(--white);
+}
+
+.requestBid-hero-text:hover {
+    cursor: pointer;
+    background-image: linear-gradient(90deg, rgb(252, 117, 124), rgb(250, 2, 2));
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.title-text {
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 4px;
+}
+
+.location-wrapper, .phone-wrapper, .email-wrapper {
+    width: 33%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light);
+    width: 80%;
+    padding: 12px;
+    border: 4px solid var(--dark);
+    box-shadow: 8px 8px 10px black;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-icon, .contact-title {
+    display: none;
+}
+
+.location-icon, .phone-icon, .email-icon {
+    font-size: 80px;
+    color: var(--white);
+}
+
+
+.phone-text, .email-text {
+    color:black
+}
+
+.icon-background {
+    background-color: var(--dark);
+    width: fit-content;
+    padding: 16px;
+    margin: auto;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .phone-icon, .email-icon, .email-background, .email-title {
+        display: none;
+    }
+
+    .contact-icon {
+        display: inherit;
+        font-size: 80px;
+        color: var(--white);
+    }
+
+    .contact-title {
+        display: inherit;
+    }
+    
+    .email-wrapper {
+        position: absolute;
+        top: 222px; right: 136px;
+    }
+
+    .location-wrapper, .phone-wrapper {
+        width: 49%;
+    }
+
+    .phone-title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info-container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .contact-info-wrapper {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .contact-icon, .contact-title {
+        display: none;
+    }
+
+    .phone-icon, .phone-title {
+        display: inherit;
+    }
+    
+    .email-icon, .email-background, .email-title
+     {
+        display: inherit;
+    }
+
+    .email-wrapper {
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+
+    .location-wrapper, .phone-wrapper {
+        width: 100%;
+    }
+
+    .icon-background {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+    }
+}
